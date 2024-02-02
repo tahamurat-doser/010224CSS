@@ -1,0 +1,93 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch+Pop&display=swap');
+@import './themes.css';
+
+:root{
+    --white: #ececec;
+    --orange: rgba(160, 141, 106, 0.697);
+    --blue: #5d5da4b4;
+    --blue_dark: rgba(7, 7, 67, 0.686);
+    --yesil:rgba(41, 101, 41, 0.831);
+    --yesil_dark:#053505db;
+
+    --ff-rubik: 'Rubik Glitch Pop', system-ui;
+
+    --fs-lg:1.4rem;
+    --fs-xl:2rem;
+    --fs-xxl:3rem;
+
+   /*  renk paleti */
+   --green1:#042940;
+   --green2:#005C53;
+   --green3:#9FC131;
+   --green4:#DBF227;
+   --green5:#D6D58E;
+
+}
+
+body{
+    background-color: var(--grey-5);
+   /*  font-family: 'Rubik Glitch Pop', system-ui; */
+}
+
+h1{
+    background-color: var(--green1);
+    font-size: var(--fs-lg);
+    color: var(--white);
+}
+
+p{
+    background-color: var(--green2);
+    color: var(--white);
+    font-family: var(--ff-rubik);
+    font-family: var(--ff-sevillana);
+}
+
+.container{
+    border: 2px solid red;
+    width: 500px;
+    height: 500px;
+    background-color: var(--green3);
+    font-size: var(--fs-xxl);
+    box-shadow: var(--shadow-dark);
+}
+.light{
+    width: 150px;
+    height: 250px;
+    background-color: var(--green5);
+    font-family: var( --ff-yeon);
+
+}
+.dark{
+    width: 150px;
+    height: 250px;
+    background-color: var(--yesil_dark);
+   
+}
+@media screen and (min-width:1000px) and (max-width:1300px) {
+    body{
+        background-color: red;
+    }
+    
+}
+
+@media screen and (max-width:900px) {
+    body{
+        background-color: #066a48;
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+    body{
+        background-color: aquamarine;
+    }
+    
+}
+
+@media screen and (max-width:300px) {
+    body{
+        background-color: aqua;
+    }
+    
+}

@@ -1,0 +1,127 @@
+@import './themes.css';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   font-family: var(--ff-roboto); 
+}
+.container{
+  /*   border: 2px solid red; */
+    max-width: 1200px;
+    margin: 50px auto;
+}
+nav{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1rem;
+}
+nav img{
+    width: 200px;
+}
+.btn{
+    /* order: 5px solid blue; */
+}
+button{
+    border: 2px solid var(--red-dark);
+    padding: 1rem 1.3rem;
+    border-radius: 5px;
+    box-shadow: var(--shadow-light);
+    font-family: var(--ff-yeon);
+    margin: 1rem 0.6rem;
+    white-space: nowrap;/* ! butonlar içindeki yazıların alt alta gelmesini önler. */
+    font-size: var(--fs-lg);
+}
+button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.btn-light{
+   background-color: var(--white); 
+   color: var(--red-dark);
+}
+.btn-dark{
+   background-color: var(--red-dark);
+   color: var(--white);
+}
+header.hero{
+   /*  border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    text-align: justify;
+}
+header.hero h1,p{
+line-height: var(--line-h-xl);
+}
+.section-text{
+    /* border: 2px solid blue; */
+    flex: 2;
+
+}
+.section-img{
+    /* border: 2px solid green; */
+    flex: 1;
+
+}
+
+.section-img img{
+    width: 100%;
+    min-width: 300px;
+}
+main .card{
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    gap: 1rem;
+    border: 20px;
+    box-shadow: var(--shadow-dark);
+    margin: 2rem 0;
+}
+main .card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+main .card img{
+    width: 100%;
+}
+main article{
+    flex: 1;
+}
+
+@media screen and (max-width:700px){
+    nav{
+        flex-direction: column;/* !bunula item ların alt alta gelmesini sağladık */
+    }
+    nav img{
+        width: 250px;
+    }
+    header.hero{
+        flex-direction: column;
+    }
+    main .card{
+        flex-direction: column;
+    }
+    main .card:nth-child(even) {
+        flex-direction: column;
+    }
+} 
+@media screen and (max-width:420px){
+
+.btn{
+    display: flex;
+    flex-direction: column;
+
+}
+.btn button{
+    width: 250px;
+    margin: 0.75rem;
+}
+
+
+
+}
+
